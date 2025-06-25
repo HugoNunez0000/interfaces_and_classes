@@ -1,0 +1,24 @@
+{
+    "A": {
+        "name": "A",
+        "density": 2.6,
+        "compressive": 100.0,
+        "tensile": 15.0,
+        "young": 70.0,
+        "poisson": 0.21,
+        "velocity": 3000.0,
+        "rmr": 50.0,
+        "rqd": 50.0
+    },
+    "B": {
+        "name": "B",
+        "density": 2.8,
+        "compressive": 120.0,
+        "tensile": 10.0,
+        "young": 80.0,
+        "poisson": 0.21,
+        "velocity": 3500.0,
+        "rmr": 60.0,
+        "rqd": 60.0
+    }
+}
