@@ -17,7 +17,7 @@ import tkinter as tk
 class LabelEntry(tk.Frame):
     '''Entrada de texto con etiquetas'''
 
-    def __init__(self, parent, label='', units='', label_width=20):
+    def __init__(self, parent, label='', units='', label_width=20, textvariable=None):
 
         # Configurar el frame:
         super().__init__(parent)
@@ -27,7 +27,7 @@ class LabelEntry(tk.Frame):
         self.label.grid(row=0, column=0, sticky='w')
 
         # Crear la entrada de texto:
-        self.entry = tk.Entry(self)
+        self.entry = tk.Entry(self,textvariable=textvariable)
         self.entry.grid(row=0, column=1)
 
         # Crear la unidad de medida:
