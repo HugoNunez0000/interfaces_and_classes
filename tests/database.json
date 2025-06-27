@@ -1,0 +1,18 @@
+{
+    "Andesita": {
+        "density": 2.6,
+        "compressive": 100,
+        "tensile": 15,
+        "young": 70,
+        "poisson": 0.21,
+        "velocity": 3000
+    },
+    "Granito": {
+        "density": 2.8,
+        "compressive": 130,
+        "tensile": 20,
+        "young": 75,
+        "poisson": 0.21,
+        "velocity": 4000
+    }
+}

@@ -17,7 +17,12 @@ import tkinter as tk
 class LabelEntry(tk.Frame):
     '''Entrada de texto con etiquetas'''
 
+<<<<<<< HEAD:label_entry.py
     def __init__(self, parent, label='', units='', label_width=20, textvariable=None):
+=======
+    def __init__(self, parent, label='', units='', label_width=20,
+                 textvariable=None):
+>>>>>>> 7132ddb5644a04514823ebd82408bc7298c545db:widgets/label_entry.py
 
         # Configurar el frame:
         super().__init__(parent)
@@ -27,7 +32,11 @@ class LabelEntry(tk.Frame):
         self.label.grid(row=0, column=0, sticky='w')
 
         # Crear la entrada de texto:
+<<<<<<< HEAD:label_entry.py
         self.entry = tk.Entry(self,textvariable=textvariable)
+=======
+        self.entry = tk.Entry(self, textvariable=textvariable)
+>>>>>>> 7132ddb5644a04514823ebd82408bc7298c545db:widgets/label_entry.py
         self.entry.grid(row=0, column=1)
 
         # Crear la unidad de medida:
@@ -39,6 +48,10 @@ class LabelEntry(tk.Frame):
         '''sobreescribir función grid original'''
         super().grid(sticky=sticky, padx=padx)
 
+
+    def get(self):
+        '''Recupera el contenido de la entrada de texto'''
+        return self.entry.get()
 
 if __name__ == '__main__':
     
